@@ -1,4 +1,6 @@
 #include "main.h"
+#ifndef MAIN_H_
+#define MAIN_H_
 /**
  * main - Entry point
  *
@@ -6,12 +8,14 @@
  */
 int main(void)
 {
-char *sh = "Holberton";
-while (*sh)
-{
-_putchar(*sh);
-sh++;
-}
-_putchar('\n');
-return (0);
+	char *sh = "Holberton";
+
+	while (*sh)
+	{
+		_putchar(*sh);
+		sh++;
+	}
+	_putchar('\n');
+
+	return (0);
 }
